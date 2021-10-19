@@ -1,8 +1,8 @@
 # ffmpeg-VAAPI-OpenVINO
-Sample for FFmpeg with VAAPI hardware decode and scale, combining OpenVINO iGPU inference with no frame data copy between CPu and iCPU. 
-The whole workload runs on iGPU, fast Uspeed, low CPU utilization and make full use of iGPU decode unit.
-For FFmpeg user/customer, we provide a solution about FFMPEG iGPU hardwaredecode connectiong OpenVINO iGPU inference engine avoiding frame data copy. The frame data after decoding/scaling can be read by iGPU’s inference engine, so that we can have low CPU utilization and maxinum iGPU usage.  
+Sample for FFmpeg with VAAPI hardware decode and scale, combining OpenVINO iGPU inference  
 
+For FFmpeg user/customer, we provide a solution about FFMPEG iGPU hardware decode connectiong OpenVINO iGPU inference engine avoiding frame data copy. The frame data after decoding/scaling in the buffer can be directly read by iGPU’s inference engine, so that we can have low CPU utilization and maxinum iGPU usage.    
+The whole workload runs on iGPU, compared with before ,we have fast pre-process speed and more bandwidth between CPU/iGPU communication.
 
 ## Dependences：
 
